@@ -477,6 +477,10 @@
             .image-frame::before {
                 top: -3px; left: -3px; right: -3px; bottom: -3px;
             }
+            div[id^="card."]:target {
+                background-color: #ADD8E6;
+                padding: 10px;
+            }
         }
     </style>
 </head>
@@ -514,7 +518,7 @@
                         <h3>PET_NAME</h3>
                         <p>PET_DESCRIPTION</p>
                         <h3>Rating</h3>
-                        <p>Averaged out from all ratings on their <a href="https://PET_LINK_HERE/about#ratings">site</a></p>
+                        <p class="note">Averaged out from all ratings on their <a href="https://PET_LINK_HERE/about#ratings">site</a></p>
                         <div class="pet-rating">
                             <span class="paw filled">🐾</span>
                             <span class="paw filled">🐾</span>
@@ -527,13 +531,13 @@
                 -->
                 
                 <!-- Hermione Card -->
-                <div class="pet-card" onclick="window.location.href='https://hermione-the-kitten.netlify.app'">
+                <div class="pet-card" onclick="window.location.href='https://hermione-the-kitten.netlify.app'" id="card.hermione">
                     <img src="images/hermione_hero.jpg" alt="Hermione the Kitten" class="pet-card-image">
                     <div class="pet-card-content">
                         <h3>Hermione</h3>
                         <p>An adorable and playful kitten who loves exploring and cuddling. She's named after the clever Hermione Granger from Harry Potter.</p>
                         <h3>Rating</h3>
-                        <p>Averaged out from all ratings on their <a href="https://hermione-the-kitten.netlify.app/about">site</a></p>
+                        <p class="note">Averaged out from all ratings on their <a href="https://hermione-the-kitten.netlify.app/about">site</a></p>
                         <div class="pet-rating" title="5 out of 5">
                             <span class="paw filled">🐾</span>
                             <span class="paw filled">🐾</span>
@@ -543,13 +547,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="pet-card" onclick="window.location.href='https://pebbles-the-dog.netlify.app'">
+                <div class="pet-card" onclick="window.location.href='https://pebbles-the-dog.netlify.app'" id="card.pebbles">
                     <img src="images/pebbles.jpg" alt="Pebbles the Dog" class="pet-card-image">
                     <div class="pet-card-content">
                         <h3>Pebbles</h3>
                         <p>A wonderful dog who loves her Mom. And back scratches.</p>
                         <h3>Rating</h3>
-                        <p>Averaged out from all ratings on their <a href="https://pebbles-the-dog.netlify.app/about#ratings">site</a></p>
+                        <p class="note">Averaged out from all ratings on their <a href="https://pebbles-the-dog.netlify.app/about#ratings">site</a></p>
                         <div class="pet-rating" title="4 out of 5">
                             <span class="paw filled">🐾</span>
                             <span class="paw filled">🐾</span>
